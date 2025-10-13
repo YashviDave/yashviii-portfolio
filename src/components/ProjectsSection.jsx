@@ -1,4 +1,7 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import project1 from "../assets/projects/project1.png";
+import project2 from "../assets/projects/project2.png";
+import project3 from "../assets/projects/project3.png";
 
 const projects = [
   {
@@ -6,7 +9,7 @@ const projects = [
     title: "Social Media App",
     description:
       "A beautiful social media landing page using React and Bootstrap",
-    image: "src/assets/projects/project1.png",
+    image: project1,
     tags: ["React", "Bootstrap", "Flask"],
   },
   {
@@ -14,7 +17,7 @@ const projects = [
     title: "Ecommerce Website",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "src/assets/projects/project2.png",
+    image: project2,
     tags: ["React", "TailwindCSS", "Fake API"],
   },
   {
@@ -22,7 +25,7 @@ const projects = [
     title: "Movies Platform",
     description:
       "Full-featured Movie platform with filtering and search capabilities.",
-    image: "src/assets/projects/project3.png",
+    image: project3,
     tags: ["React", "Mackoon"],
   },
 ];
