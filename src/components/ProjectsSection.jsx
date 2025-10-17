@@ -6,27 +6,33 @@ import project3 from "../assets/projects/project3.png";
 const projects = [
   {
     id: 1,
-    title: "Social Media App",
-    description:
-      "A beautiful social media landing page using React and Bootstrap",
-    image: project1,
-    tags: ["React", "Bootstrap", "Flask"],
-  },
-  {
-    id: 2,
-    title: "Ecommerce Website",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: project2,
-    tags: ["React", "TailwindCSS", "Fake API"],
-  },
-  {
-    id: 3,
     title: "Movies Platform",
     description:
       "Full-featured Movie platform with filtering and search capabilities.",
     image: project3,
     tags: ["React", "Mackoon"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/YashviDave/moviedux-react-project",
+  },
+  {
+    id: 2,
+    title: "Social Media App",
+    description:
+      "A beautiful social media landing page using React and Bootstrap",
+    image: project1,
+    tags: ["React", "Bootstrap", "Firebase"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/Training-Rapidops/Yashvi-Dave/tree/master/YASBEE/yasbee",
+  },
+  {
+    id: 3,
+    title: "Ecommerce Website",
+    description:
+      "Interactive analytics dashboard with data visualization and search.",
+    image: project2,
+    tags: ["React", "TailwindCSS", "Fake API"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/Training-Rapidops/Yashvi-Dave/tree/master/UPTOWNIE101/uptownie101",
   },
 ];
 
@@ -58,7 +64,7 @@ export const ProjectsSection = () => {
                 />
               </div>
 
-              <div className="p-6">
+              <div className="pt-6 pl-6 pr-6 pb-4">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
@@ -71,6 +77,15 @@ export const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
+                <div className="flex justify-between items-center">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
+                    </a>
+                </div>
               </div>
             </div>
           ))}
