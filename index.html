@@ -11,15 +11,6 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx">
-    const storedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-    if (!storedTheme) localStorage.setItem('theme','dark');
-  }
   </script>
 </body>
 
